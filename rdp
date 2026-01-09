@@ -8,6 +8,8 @@ echo "Docker Run (3/3)"
 docker run -d \
   --name ubuntu-rdp \
   --platform linux/amd64 \
+  --cap-add=SYS_ADMIN \
+  --security-opt apparmor=unconfined \
   -p 6080:6080 \
   --restart unless-stopped \
   akarita/docker-ubuntu-desktop
