@@ -1,8 +1,15 @@
+echo "RDP Installer by Olcsa123Dev"
+echo ""
+echo "APT Update (1/3)"
 apt update -y
+echo "APT Upgrade (2/3)"
 apt upgrade -y
+echo "Docker Run (3/3)"
 docker run -d \
   --name ubuntu-rdp \
   --platform linux/amd64 \
   -p 6080:6080 \
   --restart unless-stopped \
   akarita/docker-ubuntu-desktop
+echo "RDP Installed successfully."
+echo "View the CodeSandBox ports"
