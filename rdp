@@ -1,10 +1,6 @@
-echo "RDP Installer by Olcsa123Dev"
-echo ""
-echo "APT Update (1/3)"
-apt update -y
-echo "APT Upgrade (2/3)"
-apt upgrade -y
-echo "Docker Run (3/3)"
+echo "RDP Installer made by Olcsa123Dev with ❤"
+echo "----------------------------"
+echo "Docker Run (1️⃣/1️⃣)"
 docker run -d \
   --name ubuntu-rdp \
   --platform linux/amd64 \
@@ -13,5 +9,9 @@ docker run -d \
   -p 6080:6080 \
   --restart unless-stopped \
   akarita/docker-ubuntu-desktop
-echo "RDP Installed successfully."
-echo "View the CodeSandBox ports"
+echo "✔ RDP Installed successfully."
+echo "------------------------------------"
+echo "👀 View the CodeSandBox 6080 port link."
+echo "↗ Open it and choose vnc.html"
+echo "↗ Click on the connent button"
+echo "👍 Enjoy"
